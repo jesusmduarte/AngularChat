@@ -20,3 +20,18 @@ steps:
     npm install
     ng build
   displayName: 'npm install and build'
+
+- task: Application security testing@2023
+  inputs:
+    projectName: 'angular_scan_test'
+    enableProxy: true
+    enableSastScan: true
+    CheckmarxService: 'checkmarx_service'
+    fullTeamName: 'CxServer'
+    generatePDFReport: true
+    vulnerabilityThreshold: true
+    high: '1'
+    medium: '3'
+    low: '2'
+    enableDependencyScan: false
+  displayName: 'checkmarx scan'
