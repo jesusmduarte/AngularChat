@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+    <div class="login-body">
+        <div class="login-container">
+            <div class="input-group">
+                <input type="text" class="login-input" formControlName="username" id="username" placeholder="Username or Email">
+            </div>
+            <div class="input-group">
+                <input type="password" class="login-input" formControlName="password" id="password" placeholder="Password">
+            </div>
+            <button class="login-button">SIGN IN</button>
+            <div class="signin-options">
+                <span>— Or Sign In With —</span>
+            </div>
+            <div class="social-buttons">
+                <button class="facebook-button">
+                    <i class="fab fa-facebook-square"></i> Facebook
+                </button>
+                <button class="twitter-button">
+                    <i class="fab fa-twitter"></i> Twitter
+                </button>
+            </div>
+        </div>
+    </div>
+</form>

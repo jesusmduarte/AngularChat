@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    --login-background_path: url('./assets/images/login/mountains_abstract_background.jpeg');
+}
